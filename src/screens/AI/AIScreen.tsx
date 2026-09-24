@@ -1,0 +1,4 @@
+import React from 'react';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+export default function AIScreen(){ return <View style={styles.c}><Text style={styles.title}>AI Features</Text><TouchableOpacity style={styles.aiCard}><Text>📸 AI Screenshot Import - Extract Title, Date, Time</Text></TouchableOpacity><TouchableOpacity style={styles.aiCard}><Text>⚠️ AI Deadline Clash Detection</Text></TouchableOpacity><TouchableOpacity style={styles.aiCard}><Text>📄 AI PDF Summary</Text></TouchableOpacity><TouchableOpacity style={styles.aiCard}><Text>🔍 AI Smart Search</Text></TouchableOpacity></View>; }
+const styles = StyleSheet.create({c:{flex:1, padding:16}, title:{fontWeight:'bold', fontSize:18}, aiCard:{backgroundColor:'white', padding:16, borderRadius:16, marginTop:12, elevation:2}});

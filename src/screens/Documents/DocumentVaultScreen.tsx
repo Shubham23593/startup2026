@@ -1,0 +1,5 @@
+import React from 'react';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+export default function DocumentVaultScreen(){ return <View style={styles.c}><Text style={styles.title}>Document Vault - Secure Cloud</Text><View style={styles.row}><View style={styles.folder}><Icon name="file-pdf-box" size={32} color="#B3261E"/><Text>Resume.pdf</Text></View><View style={styles.folder}><Icon name="certificate" size={32} color="#6750A4"/><Text>Certs</Text></View></View><TouchableOpacity style={styles.upload}><Text style={{color:'white'}}>Upload PDF/DOCX/PPT</Text></TouchableOpacity></View>; }
+const styles = StyleSheet.create({c:{flex:1, padding:16}, title:{fontWeight:'bold', fontSize:16}, row:{flexDirection:'row', marginTop:16}, folder:{width:100, height:100, backgroundColor:'white', borderRadius:16, justifyContent:'center', alignItems:'center', marginRight:12, elevation:2}, upload:{backgroundColor:'#6750A4', padding:16, borderRadius:16, alignItems:'center', marginTop:20}});
